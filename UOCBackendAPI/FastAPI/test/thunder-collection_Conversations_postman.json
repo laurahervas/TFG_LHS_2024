@@ -1,0 +1,60 @@
+{
+    "info": {
+        "_postman_id": "d98e0e0e-60cd-4cfe-a314-ada9e98d7efc",
+        "name": "Conversations",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://127.0.0.1:8000/conversations/clean",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/conversation/clean",
+                    "path": [
+                        "conversation",
+                        "clean"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "updateConversation",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/conversation",
+                    "path": [
+                        "conversation"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id\": \"6640be2cfe252944e0a753bd\",\n  \"user\": \"662eac875a187ab12cafc923\", \n  \"conversation\": \n  [\n    {\n      \"query\": \"que cuota anual tiene una tarjeta de debito\",\n      \"response\": \"\\n\\n# Tarjetas de débito\\n\\n## Límites de crédito\\n\\n* El límite de crédito se asigna centralizadamente a los clientes que cumplan con ciertos requisitos.\\n* Los límites de crédito pueden variar según la tarjeta y el cliente.\\n* Se puede asignar un límite de crédito desde oficina.\\n\\n## Condiciones de pago\\n\\n* La forma de pago que se puede asignar al contrato es: Pago Total, Importe Fijo o Porcentaje de la deuda.\\n* Se puede fraccionar la operación a 3, 6 y 12 meses (no está disponible la opción de fraccionar a 3 meses sin intereses).\\n* El cargo es igual que el de las tarjetas de crédito mensual: los importes dispuestos a crédito realizados entre el día 22 de un mes y el 21 del siguiente se cargarán el siguiente día 1.\\n\\n## Prevención de morosidad\\n\\n* Se procede centralizadamente a modificar los contratos de aquellos clientes con una alta categoría SIR y reincidentes en morosidad, forzando sus contratos de crédito a operativa de débito.\\n* La modificación se puede consultar en los movimientos históricos del contrato de tarjetas.\\n* Si queremos volver a asignar límite de crédito a un cliente afectado por estas acciones de prevención de morosidad, hace falta modificar desde oficina la señal \\\"Forzar compras a débito” y asignar un nuevo límite de crédio al contrato.\\n\\n## Activación de tarjetas\\n\\n* Cuando el cliente contrata una tarjeta, durante el alta, se ofrece siempre desactivada.\\n* Es necesario que el cliente acuda a un cajero, oficina o TPV para activar la tarjeta. Próximamente podrá activarla vía APP.\\n\\n## Fuentes\\n\\n* Documento 418606: Límite de crédito de 200 € para reintegros en cajeros con tarjeta de débito.\\n* Documento 422985: Tarjetas sin límite de crédito por Prevención de Morosidad.\\n* Documento 442151: Cuando un cliente se da de alta en Banca Digital, ¿puede activar su tarjeta de débito contratada desde la APP?\"\n    }\n  ]\n}"
+                }
+            }
+        }
+    ]
+}

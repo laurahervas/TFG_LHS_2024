@@ -1,0 +1,108 @@
+{
+    "info": {
+        "_postman_id": "ed5e47fd-5aaf-444d-8f47-47a45dd2f1e4",
+        "name": "Embeddings",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://127.0.0.1:8000/embeddings/reload_embeddings",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/embeddings",
+                    "path": [
+                        "embeddings"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/embeddings/search/?user_query='que cuota anual tiene una tarjeta de debito'",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/embeddings/search/?user_query='que cuota anual tiene una tarjeta de debito'",
+                    "query": [
+                        {
+                            "key": "user_query",
+                            "value": "'que cuota anual tiene una tarjeta de debito'"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "embeddings",
+                        "search"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/embeddings",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/embeddings",
+                    "path": [
+                        "embeddings"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n\"code\": 00000,\n\"embeddings\": [\n    -0.030527226626873016,\n    0.002666973741725087,\n    0.014002280309796333,\n    0.012143595144152641\n],\n \"motivo\": \"\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/embeddings",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/embeddings/reload_embeddings",
+                    "path": [
+                        "embeddings",
+                        "reload_embeddings"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}

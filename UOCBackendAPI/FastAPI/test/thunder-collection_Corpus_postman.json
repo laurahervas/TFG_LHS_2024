@@ -1,0 +1,159 @@
+{
+    "info": {
+        "_postman_id": "bf2d6845-864c-4de9-9e3e-81e02dd63b6c",
+        "name": "Corpus",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://127.0.0.1:8000/corpus/reload_corpus",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/corpus/reload_corpus",
+                    "path": [
+                        "corpus",
+                        "reload_corpus"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/corpus/code/418183",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/corpus/code/418183",
+                    "path": [
+                        "corpus",
+                        "code",
+                        "418183"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/corpus/?id=6623a273394f039752896846",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/corpus/?id=6623a273394f039752896846",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "6623a273394f039752896846"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "corpus"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/corpus/code/433243",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/corpus/code/433243",
+                    "path": [
+                        "corpus",
+                        "code",
+                        "433243"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/corpus/codelist/?listdocs=[{'code':418183, 'similarity':0.8948}]",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/corpus/codelist/?docList=[{\"code\":\"418183\", \"similarity\":0.8948}]",
+                    "query": [
+                        {
+                            "key": "docList",
+                            "value": "[{\"code\":\"418183\", \"similarity\":0.8948}]"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "corpus",
+                        "codelist"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "[{\"code\":\"418183\", \"similarity\":0.8948}]\n"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/corpus",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/corpus",
+                    "path": [
+                        "corpus"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}

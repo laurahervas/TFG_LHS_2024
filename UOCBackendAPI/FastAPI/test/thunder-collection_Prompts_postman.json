@@ -1,0 +1,100 @@
+{
+    "info": {
+        "_postman_id": "2af68b1e-6f3d-4008-aef7-f167788773d0",
+        "name": "Prompts",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://127.0.0.1:8000/prompt/reload_prompts",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/prompt/reload_prompts",
+                    "path": [
+                        "prompt",
+                        "reload_prompts"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/prompt",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/prompt",
+                    "path": [
+                        "prompt"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/prompt/code/1",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/prompt/code/1",
+                    "path": [
+                        "prompt",
+                        "code",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/prompt/?id=6632a153d976e2945c85d779",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/prompt/?id=6632a153d976e2945c85d779",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "6632a153d976e2945c85d779"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "prompt"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "info": {
+        "_postman_id": "2478e8c2-bccd-4939-9e30-8b616e9571d9",
+        "name": "Users",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "https://127.0.0.1:8000/users",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users/",
+                    "path": [
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": " {\n    \"id\": 4,\n    \"name\": \"Pepe\",\n    \"surname\": \"Dahlberg\",\n    \"url\": \"https://haakon.com\",\n    \"age\": 33\n  }"
+                }
+            }
+        },
+        {
+            "name": "https://127.0.0.1:8000",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/users/me",
+                    "path": [
+                        "users",
+                        "me"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "username",
+                            "value": "mouredev",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123456",
+                            "type": "default"
+                        }
+                    ]
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtb3VyZWRldiIsImV4cCI6MTcxMTU2MzkwMX0.JEBlL0BdXjRYq-9nR56lbK6hk4xy708010Ppsd7R-Cc",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1/usersdb_lhs",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/usersdb_lhs",
+                    "path": [
+                        "usersdb_lhs"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\"username\": \"laurahervas\",\n \"email\": \"laurahervas@uoc.edu\"}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/usersdb_lhs/6605d8820448b1026e49b40a",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/usersdb_lhs",
+                    "path": [
+                        "usersdb_lhs"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "  {\n    \"username\": \"brais\",\n    \"email\": \"brais@mouredev.com\"\n  }"
+                }
+            }
+        }
+    ]
+}

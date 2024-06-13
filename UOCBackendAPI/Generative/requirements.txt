@@ -1,0 +1,14 @@
+fastapi
+python-jose
+passlib
+bcrypt
+python-multipart
+python-dotenv
+uvicorn[standard]
+requests
+numpy
+pandas
+openai
+
+#transformers=4.32.0
+#sentence-transformers=2.6.1

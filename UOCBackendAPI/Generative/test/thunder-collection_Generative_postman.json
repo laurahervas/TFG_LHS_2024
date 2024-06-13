@@ -1,0 +1,370 @@
+{
+    "info": {
+        "_postman_id": "9a4f1494-350e-4bcf-8224-e0f25e3b5a07",
+        "name": "Generative",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://127.0.0.1:8001/generative/generate",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"que cuota anual tiene una tarjeta de debito\",\n \"conversation\": \"665355904c65fcc0e860dcba\",\n \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(mod pago)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"¿Cómo puedo modificar la forma de pago de una tarjeta?\",\n  \"conversation\": \"1234567890\",\n  \"user\": \"myfirstuser\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate2(pagar renta)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"¿Cómo puedo pagar la declaración de la Renta con una Tarjeta?\",\n  \"conversation\": \"\",\n  \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate2(estampar tarjeta)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"¿Cómo se pide que me estampen una Tarjeta?\",\n  \"conversation\": \"1234567890\",\n  \"user\": \"myfirstuser\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(reformular)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"que día más bonito\",\n  \"conversation\": \"\",\n  \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(dar de alta tarjeta)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"Dar de alta tarjeta\",\n  \"conversation\": \"1234567890\",\n  \"user\": \"myfirstuser\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate Copy",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"que coste tiene una tarjeta de debito\",\n \"conversation\": \"\",\n \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(sin conversacion)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"que cuota anual tiene una tarjeta de debito\",\n \"conversation\": \"\",\n \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(condonación)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"no puedo condonarme una cuota\",\n \"conversation\": \"\",\n \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(saludo)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"Hola!\",\n \"conversation\": \"\",\n \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate(reformular) Copy",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"¿Qué banco es mejor Santander o BBVA?\",\n  \"conversation\": \"\",\n  \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8001/generative/generate2(pagar renta) Catala",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8001/generative/generate",
+                    "path": [
+                        "generative",
+                        "generate"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"query\": \"¿Cóm puc pagar la declaració de la renda amb una targeta?\",\n  \"conversation\": \"\",\n  \"user\": \"662eac875a187ab12cafc923\"\n}"
+                }
+            }
+        }
+    ]
+}
